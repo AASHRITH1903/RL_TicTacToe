@@ -272,16 +272,16 @@ class ValueIteration:
 
 if __name__=='__main__':
 
-    # policy =  ValueIteration().compute(4, 10)
+    policy =  ValueIteration().compute(4, 10)
     
-    # with open('policy.pkl', 'wb') as f:
-    #     pickle.dump(policy, f)
+    with open('policy_vi_4x4.pkl', 'wb') as f:
+        pickle.dump(policy, f)
 
-    with open('policy_4x4.pkl', 'rb') as f:
-        policy = pickle.load(f)
+    # with open('policy_4x4.pkl', 'rb') as f:
+    #     policy = pickle.load(f)
     
-    for _ in range(10):
+    # for _ in range(10):
 
-        state = input()
-        action = policy[int(state,3)]
-        print(action)
+    #     state = input()
+    #     action = policy[int(state,3)]
+    #     print(action)

@@ -6,7 +6,7 @@ import numpy as np
 import pickle
 import time
 
-n = 4
+n = 3
 total_wins = 0
 total_loses = 0
 total_ties = 0
@@ -139,7 +139,7 @@ def draw_game_over(winner):
     screen.blit(again_img, (screen_width // 2 - 80, screen_height // 2 + 10))
 
 
-with open(f'policy_{n}x{n}_p.pkl', 'rb') as f:
+with open(f'policy_pi_{n}x{n}.pkl', 'rb') as f:
     policy = pickle.load(f)
 
 

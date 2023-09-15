@@ -257,7 +257,7 @@ if __name__ == '__main__':
 
     policy = PolicyIteration().compute(4)
 
-    with open('policy_4x4_p.pkl', 'wb') as f:
+    with open('policy_pi_4x4.pkl', 'wb') as f:
         pickle.dump(policy, f)
 
     # for _ in range(10):
